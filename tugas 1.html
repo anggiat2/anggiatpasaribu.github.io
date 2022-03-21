@@ -2,8 +2,30 @@
 <html>
   <head>
     <title>Tugas HTML</title>
+    <link rel="stylesheet" href="tugas1.css" />
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+        
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        </style>
   </head>
+
   <body>
+    <div style="color:rgb(255, 255, 255)" font-size :100px;>
+     
     <h1>Text Formating</h1>
     <b>Bold</b> <i>Italic</i> <mark>Marked</mark> <del>Italic</del> <sub>subcript</sub> <strong> important</strong> <em>Emphasized </em> <small> Small</small> <ins>inserted</ins> <sup>Super</sup>
     <h2>List
@@ -14,15 +36,18 @@
         <li>Telur</li>
       </ul>
     </p>
-    <img src="image/Logo Gunadarma.png" alt="Gunadarma University" width="200" height="200">
-    <p>
-         <a href="default.asp">
-        <img src="image/blue-cry.gif" alt="HTML tutorial"
-        style="width:200px;height:200px;">
-        </a>
-        </p>
-        <a href="default.asp">
-            <img src="https://media.giphy.com/media/U7LqaPlZv3Z3KYrH9M/giphy.gif" alt = "tester" width="200" height="200"/>
+    <div class="row">
+
+      <div class="column">
+        <img src="image/Logo Gunadarma.png" alt="Snow" style="width:70%">
+      </div>
+      <div class="column">
+        <img src="image/blue-cry.gif" alt="Forest" style="width:80%">
+      </div>
+      <div class="column">
+        <img src="https://media.giphy.com/media/fuJPZBIIqzbt1kAYVc/giphy.gif" style="width:80%"> 
+      </div>
+    </div>
 
 </h2>
     <h3>
@@ -44,14 +69,15 @@
     
         <style>
         table, th, td {
-          border:1px solid black;
+          border:1px solid rgb(231, 227, 9);
         }
         </style>
         <body>
+          <body style="background-image:url('image/Background\ gambar\ 2.jpg');">
         
         <h2>Berikut Daftar Nama Kelompok 5 </h2>
         
-        <table style="width:100%">
+        <table style="width=100%;color:rgb(207, 192, 186)">
           <tr>
             <th>Nama</th>
             <th>NPM</th>
@@ -84,7 +110,7 @@
           </tr>
           
         
-        <p> MATA KULIAH Pemrograman Berbasis Web </p>
+        <p> MATA KULIAH Pemrograman Berbasis Web </p> 
         
         </body>
         </html>
@@ -94,9 +120,9 @@
     
     <form action="/action_page.php">
         <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
+        <input type="text" id="fname" name="fname" value="Anggiat"><br>
         <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="text" id="lname" name="lname" value="Pasaribu"><br><br>
       </form> 
       
 <form>
@@ -110,6 +136,9 @@
 <p><input type="submit" value="Submit"> </p>
 </form> 
 </h5>
-    
+</div>
+
   </body>
+  
 </html>
+
